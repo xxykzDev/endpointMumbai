@@ -52,7 +52,7 @@ const changeNumber = async (req, res) => {
    transactionData: tx,
   });
  } catch (error) {
-  console.log(error);
+  res.send({ error: error });
  }
 };
 
